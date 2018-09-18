@@ -92,6 +92,7 @@ function openmul {
     # Install MUL Controller deps:
     echo "Install Dependency of MUL Controller..."
     if [ "$DIST" = "Ubuntu" ] || [ "$DIST" = "Debian" ]; then
+	sudo apt-get update
         $install flex bison build-essential expect g++-multilib \
                  tofrodos zlib1g-dev gawk libffi-dev gettext python python-all-dev \
                  swig libcurl4-gnutls-dev libglib2.0-dev libevent-dev libssl-dev autoconf libtool

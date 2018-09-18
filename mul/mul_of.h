@@ -188,7 +188,7 @@ struct cbuf *   c_of_prep_switch_table_stats(c_switch_t *sw, uint8_t table_id);
 struct cbuf *   c_of_prep_port_stats(c_switch_t *sw, uint32_t port_no);
 int c_switch_port_mod(c_switch_t *sw, struct of_port_mod_params *pm_parms);
 
-inline c_fl_entry_t * c_do_flow_lookup(c_switch_t *sw, struct flow *fl, bool residual);
+extern inline c_fl_entry_t * c_do_flow_lookup(c_switch_t *sw, struct flow *fl, bool residual);
 
 void            of140_send_pkt_out_inline(void *arg, struct of_pkt_out_params *parms);
 #endif
